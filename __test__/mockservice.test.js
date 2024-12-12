@@ -8,7 +8,7 @@ describe("Jest Tests - Group 2", () => {
   const { GET } = cds.test("serve", __dirname + "/../srv");
 
   it("Get Customers from Northwind OData Service - MOCKING", async () => {
-    jest.mocked(getCustomers).mockReturnValue(customers);
+    getCustomers.mockImplementation(() => customers);
     const { status, data } = await GET(
       "/service/JestService/NorthwindCustomers"
     );
