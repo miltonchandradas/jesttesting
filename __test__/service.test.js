@@ -9,6 +9,7 @@ describe("Jest Tests - Group 1", () => {
     );
     expect(status).toBe(200);
     expect(data.value[0].customerId).toBe("ALFKI");
+    expect(data.value[0].city).toBe("Atlanta");
   });
 });
 

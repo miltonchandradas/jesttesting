@@ -12,4 +12,8 @@ const getCustomers = async (srv) => {
   return customers;
 };
 
-module.exports = { getCustomers };
+const modifyCustomers = async (data) => {
+  return data.forEach((customer) => customer.city = 'Atlanta')
+};
+
+module.exports = { getCustomers, modifyCustomers };
