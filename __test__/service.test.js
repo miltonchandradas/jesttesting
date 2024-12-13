@@ -1,6 +1,6 @@
 const cds = require("@sap/cds");
 
-describe("Jest Tests - Group 1", () => {
+describe("Jest Tests - ACTUAL", () => {
   const { GET } = cds.test("serve", __dirname + "/../srv");
 
   it("Get Customers from Northwind OData Service", async () => {

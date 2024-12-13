@@ -7,7 +7,7 @@ module.exports = async (srv) => {
     return await getCustomers(srv);
   });
 
-  srv.after("READ", NorthwindCustomers, async (data) => {
-    return await modifyCustomers(data);
+  srv.after("READ", NorthwindCustomers, (data) => {
+    return modifyCustomers(data);
   })
 };

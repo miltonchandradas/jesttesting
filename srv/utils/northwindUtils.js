@@ -12,7 +12,7 @@ const getCustomers = async (srv) => {
   return customers;
 };
 
-const modifyCustomers = async (data) => {
+const modifyCustomers = (data) => {
   return data.forEach((customer) => customer.city = 'Atlanta')
 };
 
